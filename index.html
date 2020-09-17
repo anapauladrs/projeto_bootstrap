@@ -1,0 +1,72 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Formulário:</h1>
+			<form class="row">
+					<div class="col-4">
+						<label>Nome:</label>
+						<input type="text" name="nome" class="form-control" />
+					</div>
+					<div class="col-3">
+						<label>Telefone:</label>
+						<input type="text" name="telefone" class="form-control" />
+					</div>
+					<div class="col-3">
+						<label>Email:</label>
+						<input type="email" name="email" class="form-control"/>
+					</div>
+					<div class="col-2">
+						<button type="button" class="btn btn-primary" style="margin-top: 30px;">Salvar</button>
+					</div>
+			</form>
+			</br>
+			<table class="table table-striped">
+				<colgroup>
+					<col width="200">
+					<col width="100">
+					<col width="150">
+					<col width="100">
+					<col width="100">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Telefone</th>
+						<th>Email</th>
+						<th>Editar</th>
+						<th>Excluir</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Fulano</td>
+						<td>0000-0000</td>
+						<td>teste@teste.com</td>
+						<td>
+							<button class="btn btn-warning">Editar</button>
+						</td>
+						<td>
+							<button class="btn btn-danger">Excluir</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Ciclano</td>
+						<td>1111-1111</td>
+						<td>teste@teste.com</td>
+						<td>
+							<button class="btn btn-warning">Editar</button>
+						</td>
+						<td>
+							<button class="btn btn-danger">Excluir</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

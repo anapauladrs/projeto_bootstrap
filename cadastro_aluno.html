@@ -1,0 +1,65 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<title>Pagina de Cadastro</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Cadastro do Aluno</h1>
+			<form class="row">
+				<div class="col-2">
+					<label for="nome">Nome:</label>
+					<input id="nome" name="nome" type="text" />
+				</div>
+				
+				<div class="col-2">
+					<label for="nasc">Data de nascimento:</label>
+					<input id="nasc" name="nasc" type="date" />
+				</div>
+				
+				<div class="col-2">
+					<label for="ano">Ano:</label>
+					<input id="ano" name="ano" type="number" />
+				</div>
+				
+				<div class="col-2">
+					<label for="materia">Matéria Preferida:</label>
+					<input id="materia" name="materia" type="text" />
+				</div>
+				
+				<div class="col-3">
+				<button type="button" style="margin-top: 30px;" class="btn btn-primary" onclick="realizarcadastro()">Enviar</button>
+				</div>
+			</form>
+			</br>
+			<table class="table table-striped">
+				<colgroup>
+					<col width="200">
+					<col width="200">
+					<col width="100">
+					<col width="200">
+					<col width="100">
+					<col width="100">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Matéria Preferida</th>
+						<th>Editar</th>
+						<th>Excluir</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Ana Paula</th>
+						<th>Matemática</th>
+						<th><button class="btn btn-warning">Editar</button></th>
+						<th><button class="btn btn-danger">Excluir</button></th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script src="cadastro_aluno.js"></script>
+	</body>
+</html>
